@@ -4,6 +4,8 @@ import { push } from 'connected-react-router'
 import {ANSWER_TYPES} from '../constants'
 import {submitSurvey} from '../actions/survey'
 
+import './Summary.css'
+
 class Summary extends Component {
     componentWillMount(){
         // If survey not done, redirect the user to the first unsolved question
@@ -14,7 +16,7 @@ class Summary extends Component {
         }
     }
     render() {
-        const {_survey, _answers, _isDone, _goToStep, _submitSurvey} = this.props;
+        const {_survey, _answers, _isDone, _goToStep, _submitSurvey, _submittingSurvey} = this.props;
         if (!_isDone) return null;
         return (
             <div className="summary">
@@ -46,7 +48,14 @@ class Summary extends Component {
                 }
                 <button
                     className="summary__submit"
-                    onClick={() => _submitSurvey(_answers)}>Done</button>
+                    disabled={_submittingSurvey}
+                    onClick={() => _submitSurvey(_answers)}>
+                    {
+                        _submittingSurvey
+                        ? <i className="fas fa-circle-notch fa-spin"></i>
+                        : <span>Done</span>
+                    }
+                </button>
             </div>
         )
     }
@@ -55,7 +64,8 @@ class Summary extends Component {
 const mapStateToProps = state => ({
     _survey: state.survey.survey,
     _answers: state.survey.answers,
-    _isDone: state.survey.isDone
+    _isDone: state.survey.isDone,
+    _submittingSurvey: state.survey.submittingSurvey
 });
 
 const mapDispatchToProps = dispatch => ({

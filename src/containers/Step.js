@@ -5,6 +5,8 @@ import { push } from 'connected-react-router'
 import {ANSWER_TYPES} from '../constants'
 import {answerQuestion} from '../actions/survey'
 
+import './Step.css'
+
 const answerTypes = Object.keys(ANSWER_TYPES).reduce((types, type) => {
     types[type] = require(`../components/${type}Answer`).default;
     return types;

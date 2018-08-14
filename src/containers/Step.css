@@ -1,0 +1,11 @@
+.step {
+
+}
+.step__question {
+    color: #4b6584;
+    font-size: 20px;
+    font-weight: bold;
+}
+.step__answers{
+    margin: 20px 0;
+}

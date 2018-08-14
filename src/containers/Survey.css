@@ -1,0 +1,80 @@
+.survey__loading,
+.survey__error{
+    text-align: center;
+}
+.survey__loading .fas{
+    font-size: 120px;
+    line-height: 150px;
+    padding: 20px 0;
+    color: #2bcbba;
+}
+.survey__error{
+    font-weight: bold;
+    color: #eb3b5a;
+}
+.survey__error .fas{
+    font-size: 50px;
+    line-height: 70px;
+    padding: 20px 0;
+    color: #fc5c65;
+    display: block;
+}
+
+.survey__progress{
+    width: 100%;
+    position: relative;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    margin: 20px 0 70px;
+    color: #4b6584;
+    font-weight: bold;
+}
+.survey__progress__bar{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 30px;
+    bottom: -30px;
+    border-radius: 13px;
+    transition: width 1s;
+    color: #fff;
+}
+
+.survey__nav{
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.survey__nav__btn{
+    font-size: 18px;
+    padding: 3px 20px;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.28);
+    color: #fff;
+    transition: all 250ms;
+    outline: none;
+    cursor: pointer;
+}
+.survey__nav__btn:disabled,
+.survey__nav__btn:disabled:hover{
+    background: #778ca3;
+    box-shadow: none;
+    color: #a5b1c2;
+    cursor: default;
+}
+.survey__nav__prev{
+    background: #2d98da;
+}
+.survey__nav__prev:hover{
+    background: #45aaf2;
+}
+.survey__nav__next{
+    background: #0fb9b1;
+}
+.survey__nav__next:hover{
+    background: #2bcbba;
+}

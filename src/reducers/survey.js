@@ -12,7 +12,9 @@ const initialState = {
     answers: {},
     currentStep: null,
 
-    isDone: false
+    isDone: false,
+
+    submittingSurvey: false,
 }
 
 export default (state = initialState, action) => {
@@ -66,6 +68,14 @@ export default (state = initialState, action) => {
         // Mark survey as done
         case TYPES.MARK_SURVEY_AS_DONE:
             return {...state, isDone: true}
+
+        // Submit survey
+        case TYPES.SUBMIT_SURVEY_IN_PROGRESS:
+            return {...state, submittingSurvey: true}
+
+        case TYPES.SUBMIT_SURVEY_SUCCESS:
+        case TYPES.SUBMIT_SURVEY_FAILURE:
+            return {...state, submittingSurvey: false}
 
         default:
             return state

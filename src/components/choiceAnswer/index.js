@@ -1,7 +1,8 @@
 import React from 'react'
+import './style.css'
 
 export default ({questionId, answers, answerQuestion, userAnswer}) => (
-    <div className="answers answers-checkbox">
+    <div className="answers answers-choice">
         {
             answers.map(answer => (
                 <div key={answer.id} className="answer">

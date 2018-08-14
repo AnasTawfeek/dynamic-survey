@@ -9,6 +9,8 @@ import Success from '../components/Success'
 
 import { getSurvey, markSurveyAsDone } from '../actions/survey'
 
+import './Survey.css'
+
 class Survey extends Component {
     componentWillMount(){
         const {_getSurvey} = this.props;
@@ -18,7 +20,7 @@ class Survey extends Component {
     _renderLoading(){
         return (
             <div className="survey__loading">
-                Loading Mowaah
+                <i className="fas fa-circle-notch fa-spin"></i>
             </div>
         )
     }
@@ -26,7 +28,7 @@ class Survey extends Component {
     _renderError(){
         return (
             <div class="survey__error">
-                Dats an erroor!
+                <i class="fas fa-exclamation-triangle"></i> We are terribly sorry, something wrong happened.
             </div>
         )
     }
@@ -38,7 +40,18 @@ class Survey extends Component {
         return (
             <div className="survey__progress" data-done={percent === 100}>
                 {answeredQuestions.length} of {questions.length} answered
-                <div className="survey__progress__bar">{percent}%</div>
+                <div
+                    className="survey__progress__bar"
+                    style={{
+                        width: `${percent}%`,
+                        background: percent === 100 ? '#20bf6b' : '#0fb9b1'
+                    }}>
+                    {
+                        percent === 100
+                        ? <i class="fas fa-check-circle"></i>
+                        : <span>{percent}%</span>
+                    }
+                </div>
             </div>
         )
     }
@@ -72,7 +85,7 @@ class Survey extends Component {
                     ? null
                     : (
                         <button
-                            className="survey__nav__prev"
+                            className="survey__nav__btn survey__nav__prev"
                             onClick={_ => _goToStep(questions[_currentQuestionIndex - 1].id)}
                             disabled={_currentQuestionIndex === 0}>
                             Prev
@@ -80,7 +93,7 @@ class Survey extends Component {
                     )
                 }
                 <button
-                    className="survey__nav__next"
+                    className="survey__nav__btn survey__nav__next"
                     onClick={_ => {
                         _currentQuestionIndex === questions.length - 1
                         || _isDone

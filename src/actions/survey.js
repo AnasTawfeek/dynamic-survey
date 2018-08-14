@@ -38,7 +38,7 @@ export const getSurvey = async (dispatch) => {
         // Get active survey
         dispatch(getActiveSurveyInProgress());
         const activeSurveyRes = await fetch(ACTIVE_SURVEY_API);
-        // await sleep(1000); // Mocking network delay
+        await sleep(1000); // Mocking network delay
         if (activeSurveyRes.status !== 200) return dispatch(getActiveSurveyFailure(activeSurveyRes));
         const activeSurvey = await activeSurveyRes.json();
         dispatch(getActiveSurveySuccess(activeSurvey));
@@ -46,8 +46,8 @@ export const getSurvey = async (dispatch) => {
         // Get survey details
         dispatch(getSurveyInProgress());
         const surveyRes = await fetch(SURVEY_API(activeSurvey.id));
-        // await sleep(1000); // Mocking network delay
-        if (surveyRes.status !== 200) return dispatch(getSurveyFailure(surveyRes));
+        await sleep(1000); // Mocking network delay
+        if (surveyRes.status !== 200) dispatch(getSurveyFailure(surveyRes));
         const survey = await surveyRes.json();
         dispatch(getSurveySuccess(survey));
 }
@@ -91,7 +91,7 @@ export const submitSurvey = dispatch => async survey => {
             },
             body: JSON.stringify(survey)
         });
-        // await sleep(1000); // Mocking network delay
+        await sleep(1000); // Mocking network delay
         if (surveyRes.status !== 201) return dispatch(submitSurveyFailure(surveyRes));
         dispatch(submitSurveySuccess());
         dispatch(push('/success'));
