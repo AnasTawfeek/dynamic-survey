@@ -1,0 +1,34 @@
+.answers-choice .answer{
+    line-height: 20px;
+    margin: 5px 0;
+}
+
+.answers-choice .answer input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.answers-choice .answer input[type="radio"] + label {
+  position: relative;
+  padding: 0 0 0 25px;
+  font-size: 16px;
+  line-height: 25px;
+  margin:0 0 10px 0;
+}
+
+.answers-choice .answer input[type="radio"] + label:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  height: 14px;
+  width: 14px;
+  background: white;
+  border: 1px solid gray;
+  box-shadow: inset 0px 0px 0px 2px white;
+  border-radius: 8px;
+}
+
+.answers-choice .answer input[type="radio"]:checked + label:before {
+  background: #2bcbba;
+}

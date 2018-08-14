@@ -1,0 +1,14 @@
+.answers-short-text input {
+    width: 100%;
+    line-height: 24px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    font-size: 14px;
+    padding: 0 10px;
+    transition: all 250ms;
+    box-sizing: border-box;
+}
+.answers-short-text input:focus{
+    border-color: #2bcbba;
+}

@@ -1,0 +1,16 @@
+.success {
+    background: #20bf6b;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.28);
+    padding: 25px 0;
+}
+.success span {
+    display: block;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: lighter;
+}

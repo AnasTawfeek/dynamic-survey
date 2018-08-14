@@ -1,0 +1,17 @@
+.answers-long-text textarea {
+    width: 100%;
+    min-height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 10px;
+    resize: none;
+    transition: all 250ms;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.answers-long-text textarea:focus{
+    border-color: #2bcbba;
+}
