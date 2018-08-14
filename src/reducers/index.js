@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
-import test from './test'
+import survey from './survey'
 
 export default combineReducers({
-    test
+    survey
 })

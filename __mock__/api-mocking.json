@@ -1,86 +1,188 @@
 {
-    "active-survey": {
-        "id": "a8d9c293-b389-4932-a57a-09c50d2e2510"
-    },
-    "surveys": [
+  "active-survey": {
+    "id": "a8d9c293-b389-4932-a57a-09c50d2e2510"
+  },
+  "surveys": [
+    {
+      "id": "a8d9c293-b389-4932-a57a-09c50d2e2510",
+      "questions": [
         {
-            "id": "a8d9c293-b389-4932-a57a-09c50d2e2510",
-            "questions": [
-                {
-                    "id": "494c9441-4962-48b0-b569-35a2a79b46f9",
-                    "type": "choice",
-                    "question": "What is your first reaction to the product?",
-                    "answers": [
-                        {
-                            "id": "bf04aacb-2182-4787-8373-cfce83efa994",
-                            "displayText": "Very positive"
-                        },
-                        {
-                            "id": "e71b69a9-d32c-4674-97fb-77da1f4e256d",
-                            "displayText": "Somewhat positive"
-                        },
-                        {
-                            "id": "bb5ed919-3ddb-43bb-897c-c5fe12bc63a5",
-                            "displayText": "Neutral"
-                        },
-                        {
-                            "id": "cd75f7ac-2ba8-4cec-99e6-2ea1b8a5e6a9",
-                            "displayText": "Somewhat negative"
-                        },
-                        {
-                            "id": "ec88e6dd-3352-4498-aaa0-2272d701d560",
-                            "displayText": "Very negative"
-                        }
-                    ]
-                },
-                {
-                    "id": "6713124a-3833-45e7-ba53-ec5d991951ab",
-                    "type": "multi-choice",
-                    "question": "Which of the following words would you use to describe our product? Select all that apply.",
-                    "answers": [
-                        {
-                            "id": "13f60ab9-0193-44f7-a5f0-642ca711d757",
-                            "displayText": "Reliable"
-                        },
-                        {
-                            "id": "97e5473c-4f1d-4bac-9fea-37aeff2972d6",
-                            "displayText": "High quality"
-                        },
-                        {
-                            "id": "14e5c92d-5d8c-4a15-b7c7-24b14376967f",
-                            "displayText": "Useful"
-                        },
-                        {
-                            "id": "245d50c9-a073-4b47-a339-9e9f6915e761",
-                            "displayText": "Unique"
-                        },
-                        {
-                            "id": "2792150a-1157-4384-8333-394f60386985",
-                            "displayText": "Good value for money"
-                        },
-                        {
-                            "id": "8df6d7be-044a-44bd-91a0-3f51233fb75a",
-                            "displayText": "Overpriced"
-                        },
-                        {
-                            "id": "d034d51c-b1d4-402b-a506-4de0e92de974",
-                            "displayText": "Impractical"
-                        },
-                        {
-                            "id": "f0202c7e-2047-42ea-863d-26b385660922",
-                            "displayText": "Ineffective"
-                        },
-                        {
-                            "id": "b2c110db-1ec9-4708-a3d4-cc51bb2a09ac",
-                            "displayText": "Poor quality"
-                        },
-                        {
-                            "id": "bc130484-7f04-43e1-81e6-b81f3f98f946",
-                            "displayText": "Unreliable"
-                        }
-                    ]
-                }
-            ]
+          "id": "494c9441-4962-48b0-b569-35a2a79b46f9",
+          "type": "choice",
+          "question": "What is your first reaction to the product?",
+          "answers": [
+            {
+              "id": "bf04aacb-2182-4787-8373-cfce83efa994",
+              "displayText": "Very positive"
+            },
+            {
+              "id": "e71b69a9-d32c-4674-97fb-77da1f4e256d",
+              "displayText": "Somewhat positive"
+            },
+            {
+              "id": "bb5ed919-3ddb-43bb-897c-c5fe12bc63a5",
+              "displayText": "Neutral"
+            },
+            {
+              "id": "cd75f7ac-2ba8-4cec-99e6-2ea1b8a5e6a9",
+              "displayText": "Somewhat negative"
+            },
+            {
+              "id": "ec88e6dd-3352-4498-aaa0-2272d701d560",
+              "displayText": "Very negative"
+            }
+          ]
+        },
+        {
+          "id": "6713124a-3833-45e7-ba53-ec5d991951ab",
+          "type": "checkbox",
+          "question": "Which of the following words would you use to describe our product? Select all that apply.",
+          "answers": [
+            {
+              "id": "13f60ab9-0193-44f7-a5f0-642ca711d757",
+              "displayText": "Reliable"
+            },
+            {
+              "id": "97e5473c-4f1d-4bac-9fea-37aeff2972d6",
+              "displayText": "High quality"
+            },
+            {
+              "id": "14e5c92d-5d8c-4a15-b7c7-24b14376967f",
+              "displayText": "Useful"
+            },
+            {
+              "id": "245d50c9-a073-4b47-a339-9e9f6915e761",
+              "displayText": "Unique"
+            },
+            {
+              "id": "2792150a-1157-4384-8333-394f60386985",
+              "displayText": "Good value for money"
+            },
+            {
+              "id": "8df6d7be-044a-44bd-91a0-3f51233fb75a",
+              "displayText": "Overpriced"
+            },
+            {
+              "id": "d034d51c-b1d4-402b-a506-4de0e92de974",
+              "displayText": "Impractical"
+            },
+            {
+              "id": "f0202c7e-2047-42ea-863d-26b385660922",
+              "displayText": "Ineffective"
+            },
+            {
+              "id": "b2c110db-1ec9-4708-a3d4-cc51bb2a09ac",
+              "displayText": "Poor quality"
+            },
+            {
+              "id": "bc130484-7f04-43e1-81e6-b81f3f98f946",
+              "displayText": "Unreliable"
+            }
+          ]
+        },
+        {
+          "id": "f0202c7e-2047-53ea-863d-26b385660922",
+          "type": "shortText",
+          "question": "What do you like about our product?"
+        },
+        {
+          "id": "8df6d4be-044a-45bd-91a0-3f51233fb75a",
+          "type": "longText",
+          "question": "Do you have any ideas that migh improve our products?"
+        },
+        {
+          "id": "764c9441-4962-48b0-b629-35a2a79b46f9",
+          "type": "select",
+          "question": "How long have you been a customer of our company?",
+          "answers": [
+            {
+              "id": "bf04aacb-2182-4787-8373-cfce83efa994",
+              "displayText": "This is my first purchase"
+            },
+            {
+              "id": "e71b69a9-d32c-4674-97fb-77da1f4e256d",
+              "displayText": "Less than six months"
+            },
+            {
+              "id": "bb5ed919-3ddb-43bb-897c-c5fe12bc63a5",
+              "displayText": "Six months to a year"
+            },
+            {
+              "id": "cd75f7ac-2ba8-4cec-99e6-2ea1b8a5e6a9",
+              "displayText": "1-2 years"
+            },
+            {
+              "id": "ec88e6dd-3352-4498-aaa0-2272d701d560",
+              "displayText": "3 or more years"
+            },
+            {
+              "id": "8df6d4be-044a-45bd-91a0-3f51233fb75a",
+              "displayText": "I haven't made a purchase yet"
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ],
+  "answers": [
+    {
+      "494c9441-4962-48b0-b569-35a2a79b46f9": "bf04aacb-2182-4787-8373-cfce83efa994",
+      "6713124a-3833-45e7-ba53-ec5d991951ab": [
+        "2792150a-1157-4384-8333-394f60386985",
+        "8df6d7be-044a-44bd-91a0-3f51233fb75a",
+        "b2c110db-1ec9-4708-a3d4-cc51bb2a09ac"
+      ],
+      "f0202c7e-2047-53ea-863d-26b385660922": "ragawe",
+      "8df6d4be-044a-45bd-91a0-3f51233fb75a": "zdrg",
+      "764c9441-4962-48b0-b629-35a2a79b46f9": "bf04aacb-2182-4787-8373-cfce83efa994",
+      "id": 1
+    },
+    {
+      "494c9441-4962-48b0-b569-35a2a79b46f9": "bf04aacb-2182-4787-8373-cfce83efa994",
+      "6713124a-3833-45e7-ba53-ec5d991951ab": [
+        "14e5c92d-5d8c-4a15-b7c7-24b14376967f",
+        "8df6d7be-044a-44bd-91a0-3f51233fb75a",
+        "f0202c7e-2047-42ea-863d-26b385660922"
+      ],
+      "f0202c7e-2047-53ea-863d-26b385660922": "adfsa",
+      "8df6d4be-044a-45bd-91a0-3f51233fb75a": "as",
+      "764c9441-4962-48b0-b629-35a2a79b46f9": "e71b69a9-d32c-4674-97fb-77da1f4e256d",
+      "id": 2
+    },
+    {
+      "494c9441-4962-48b0-b569-35a2a79b46f9": "bb5ed919-3ddb-43bb-897c-c5fe12bc63a5",
+      "6713124a-3833-45e7-ba53-ec5d991951ab": [
+        "13f60ab9-0193-44f7-a5f0-642ca711d757",
+        "b2c110db-1ec9-4708-a3d4-cc51bb2a09ac",
+        "8df6d7be-044a-44bd-91a0-3f51233fb75a"
+      ],
+      "f0202c7e-2047-53ea-863d-26b385660922": "argwreg",
+      "8df6d4be-044a-45bd-91a0-3f51233fb75a": "zegvegv",
+      "764c9441-4962-48b0-b629-35a2a79b46f9": "cd75f7ac-2ba8-4cec-99e6-2ea1b8a5e6a9",
+      "id": 3
+    },
+    {
+      "494c9441-4962-48b0-b569-35a2a79b46f9": "e71b69a9-d32c-4674-97fb-77da1f4e256d",
+      "6713124a-3833-45e7-ba53-ec5d991951ab": [
+        "14e5c92d-5d8c-4a15-b7c7-24b14376967f",
+        "d034d51c-b1d4-402b-a506-4de0e92de974",
+        "b2c110db-1ec9-4708-a3d4-cc51bb2a09ac"
+      ],
+      "f0202c7e-2047-53ea-863d-26b385660922": "aegfwe",
+      "8df6d4be-044a-45bd-91a0-3f51233fb75a": "zebgzsbsdvseg",
+      "764c9441-4962-48b0-b629-35a2a79b46f9": "ec88e6dd-3352-4498-aaa0-2272d701d560",
+      "id": 4
+    },
+    {
+      "494c9441-4962-48b0-b569-35a2a79b46f9": "bb5ed919-3ddb-43bb-897c-c5fe12bc63a5",
+      "6713124a-3833-45e7-ba53-ec5d991951ab": [
+        "97e5473c-4f1d-4bac-9fea-37aeff2972d6",
+        "8df6d7be-044a-44bd-91a0-3f51233fb75a"
+      ],
+      "f0202c7e-2047-53ea-863d-26b385660922": "agrawreg",
+      "8df6d4be-044a-45bd-91a0-3f51233fb75a": "zvdsvzsdv",
+      "764c9441-4962-48b0-b629-35a2a79b46f9": "bb5ed919-3ddb-43bb-897c-c5fe12bc63a5",
+      "id": 5
+    }
+  ]
 }
