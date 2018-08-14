@@ -1,9 +1,6 @@
 # Dynamic Survey
 A dynamic survey react/redux app based on create-react-app, getting the survey content from json-server mocking.
 
-## Demo
-https://dynamic-servey-hyyqawxipt.now.sh
-
 ## Installation
 - run `yarn` to install the packages.
 - run `yarn start` to start the CRA server in development mode.
